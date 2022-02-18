@@ -95,6 +95,7 @@ body {
   color: #2e1720;
 }
 
+/* CARD #1 --- START */
 .cardOne--outer {
   background: linear-gradient(157.86deg, #eafae0 0%, #dcdcd6 100%);
   width: 370px;
@@ -105,19 +106,18 @@ body {
 }
 
 .cardOne {
+  padding: 322px 0 0 25px;
   width: 360px;
   height: 541px;
-  background: #ffffff;
+  background-color: #ffffff;
+  background-image: url("../img/card-1/card1_image.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
   border-radius: 15px;
 }
-.cardOne img:nth-child(1) {
-  border-radius: 15px;
-}
+
 .userContainer {
   display: flex;
-  position: relative;
-  top: -30px;
-  left: 25px;
   padding: 10px 0 10px 18px;
   width: 163px;
   height: 52px;
@@ -137,3 +137,125 @@ body {
   line-height: 120%;
   opacity: 0.7;
 }
+.cardBold {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 120%;
+  color: #000000;
+}
+.cardNormal {
+  font-size: 16px;
+  line-height: 120%;
+  opacity: 0.6;
+}
+.containerForFirstAndSecond {
+  display: flex;
+}
+.firstContainer {
+  margin: 25px 0 0 0;
+  width: 154px;
+  height: 58px;
+}
+.firstContainer .cardNormal {
+  margin: 15px 0 0 0;
+}
+.secondContainer {
+  margin: 30px 0 0 66px;
+  width: 90px;
+  height: 49px;
+}
+.secondContainer .cardNormal {
+  margin: 6px 0 0 0;
+}
+.thirdContainer {
+  margin: 30px 0 0 0;
+  width: 284px;
+  height: 24px;
+}
+/* CARD #1 --- END */
+
+/* CARD #2 --- START */
+.cardTwo--outer {
+  position: relative;
+  background: linear-gradient(157.86deg, #eafae0 0%, #dcdcd6 100%);
+  width: 370px;
+  height: 551px;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px 2px rgba(35, 67, 78, 0.1);
+
+  transition: all 3s linear;
+}
+.cardTwo--outer:hover {
+  transform: rotate(360deg);
+}
+
+.cardTwo {
+  padding: 322px 0 0 25px;
+  width: 360px;
+  height: 541px;
+  background-color: #ffffff;
+  background-image: url("../img/card-1/card2_image.jpg");
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.userContainer {
+  display: flex;
+  padding: 10px 0 10px 18px;
+  width: 163px;
+  height: 52px;
+  border-radius: 35px;
+  box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+.userContainer--text {
+  margin-left: 10px;
+}
+.name {
+  font-size: 14px;
+  line-height: 120%;
+}
+.nickname {
+  font-size: 10px;
+  line-height: 120%;
+  opacity: 0.7;
+}
+.cardBold {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 120%;
+  color: #000000;
+}
+.cardNormal {
+  font-size: 16px;
+  line-height: 120%;
+  opacity: 0.6;
+}
+.containerForFirstAndSecond {
+  display: flex;
+}
+.firstContainer {
+  margin: 25px 0 0 0;
+  width: 154px;
+  height: 58px;
+}
+.firstContainer .cardNormal {
+  margin: 15px 0 0 0;
+}
+.secondContainer {
+  margin: 30px 0 0 66px;
+  width: 90px;
+  height: 49px;
+}
+.secondContainer .cardNormal {
+  margin: 6px 0 0 0;
+}
+.thirdContainer {
+  margin: 30px 0 0 0;
+  width: 284px;
+  height: 24px;
+}
+/* CARD #1 --- END */
