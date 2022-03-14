@@ -91,17 +91,210 @@ h6 {
 
 /* ------------------------------------------------------------------------------------------------------ */
 body {
-  padding: 500px 50px 500px 500px;
   font-family: "Quantico", sans-serif;
   color: #2e1720;
 }
 
+.backgraundContainer {
+  height: 927px;
+  background: url("../img/background_pic.jpg") 93.9% 38px/ 897px 889px no-repeat;
+}
+
+header {
+  width: 1600px;
+  margin: 0 auto;
+}
+main {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+/* HEADER --- START */
+.NFT_logo {
+  margin: 32px 0 0 227px;
+  float: left;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+.NFT_logo1 {
+  font-size: 30px;
+  color: #f10c6d;
+  letter-spacing: 0px;
+}
+
+.NFT_logo2 {
+  position: relative;
+  z-index: -1;
+  left: -57px;
+  top: -0.5px;
+
+  font-size: 31px;
+  letter-spacing: -1px;
+
+  color: black;
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: white;
+  -moz-text-stroke: 1px #000;
+  -moz-text-fill-color: white;
+  -ms-text-stroke: 1px #000;
+  -ms-text-fill-color: white;
+}
+header {
+  display: flex;
+}
+
+header > a {
+  display: inline-block;
+  height: 34px;
+  color: #2e1720;
+  opacity: 0.6;
+  background: url("../img/Ellipse_for_hover.svg") bottom center/ 0px 0px
+    no-repeat;
+}
+header > a:hover {
+  transition: 0.5s;
+  background: url("../img/Ellipse_for_hover.svg") bottom center no-repeat;
+  opacity: 1;
+}
+header > a:nth-child(2) {
+  margin: 34px 0 0 366px;
+}
+header > a:nth-child(3) {
+  margin: 34px 0 0 45px;
+}
+header > a:nth-child(4) {
+  margin: 34px 0 0 45px;
+}
+header button {
+  margin: 30px 0 0 324px;
+  width: 98px;
+  height: 42px;
+  border-radius: 5px;
+  background-color: #f10c6d;
+  font-size: 18px;
+  line-height: 120%;
+  color: #ffffff;
+}
+header button:hover {
+  color: #f10c6d;
+  background-color: #ffffff;
+  transition: 1s;
+  border: 1px solid #f10c6d;
+}
+
+/* HEADER --- END */
+
+/* TEXT CONTAINER --- START */
+.textContainer {
+  margin: 190px 0 0 227px;
+  float: left;
+  width: 557px;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 130%;
+}
+.NFTS {
+  height: 70px;
+  position: relative;
+  margin: 0px 15px 0 0;
+  float: left;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 130%;
+}
+.NFTS_logo1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 130%;
+  color: #f10c6d;
+}
+
+.NFTS_logo2 {
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 1.5px;
+
+  font-size: 72px;
+  letter-spacing: -1px;
+
+  color: #666666;
+  -webkit-text-stroke: 1px #666666;
+  -webkit-text-fill-color: white;
+  -moz-text-stroke: 1px #666666;
+  -moz-text-fill-color: white;
+  -ms-text-stroke: 1px #666666;
+  -ms-text-fill-color: white;
+}
+.nftsArrow {
+  position: absolute;
+  left: 5px;
+  top: 80px;
+}
+.smallText {
+  font-size: 18px;
+  line-height: 150%;
+  opacity: 0.6;
+}
+.buttonAndSvg {
+  display: flex;
+}
+.standartButton {
+  margin: 40px 0 0 0;
+  width: 183px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f10c6d;
+  font-size: 18px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.standartButton:hover {
+  color: #f10c6d;
+  background-color: #ffffff;
+  transition: 1s;
+  border: 1px solid #f10c6d;
+}
+.blackArrow {
+  margin: 52px 0 0 15px;
+}
+.playButton {
+  background-color: transparent;
+  margin: 43px 0 0 15px;
+}
+.playButton:hover path {
+  transition: 1s;
+  fill: #f10c6d;
+}
+.playButton:hover circle {
+  transition: 1s;
+  stroke: #f10c6d;
+}
+
+.buttonAndSvg a:last-child {
+  margin: 55px 0 0 15px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2e1720;
+}
+
+/* TEXT CONTAINER --- END */
+
+/* CARDS CONTAINER --- START */
 .cardsContainer {
   position: relative;
   display: inline-block;
+
+  margin: 80px 0 0 15px;
   width: 747px;
   height: 695px;
-  border: 1px solid green;
 }
 /* CARD #1 --- START */
 .cardOne--outer {
@@ -118,8 +311,9 @@ body {
 
   transition: all 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.cardOne--outer:hover {
-  left: -500px;
+.cardOne--outer:active {
+  top: -150px;
+  transform: rotateZ(360deg);
 }
 
 .cardOne {
@@ -158,6 +352,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   line-height: 120%;
+  white-space: nowrap;
   color: #000000;
 }
 .cardNormal {
@@ -207,9 +402,10 @@ body {
   transition: all 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform: rotate(-10.3deg);
 }
-.cardTwo--outer:hover {
+.cardTwo--outer:active {
+  top: -150px;
   transform: rotate(0deg);
-  left: -500px;
+  transform: rotateZ(360deg);
 }
 
 .cardTwo {
@@ -228,7 +424,6 @@ body {
 
 /* CARD #3 --- START */
 .cardThree--outer {
-  border: 1px solid green;
   position: absolute;
   top: 50px;
   left: 80px;
@@ -243,9 +438,10 @@ body {
 
   transition: all 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.cardThree--outer:hover {
+.cardThree--outer:active {
+  top: -150px;
   transform: rotate(0deg);
-  left: -500px;
+  transform: rotateZ(360deg);
 }
 
 .cardThree {
@@ -261,3 +457,255 @@ body {
 }
 
 /* CARD #3 --- END */
+.ellipse1 {
+  position: absolute;
+  top: 203px;
+  left: 89px;
+  z-index: 8;
+}
+.ellipse2 {
+  position: absolute;
+  top: 220px;
+  left: 93px;
+  z-index: 100;
+}
+.ellipsePoint1 {
+  position: absolute;
+  top: 533px;
+  left: 81px;
+  z-index: 8;
+}
+.ellipsePoint2 {
+  position: absolute;
+  top: 486px;
+  left: 370px;
+  z-index: 12;
+}
+.ellipsePoint3 {
+  position: absolute;
+  top: 284px;
+  left: 659px;
+  z-index: 12;
+}
+/* CARDS CONTAINER --- END */
+
+/* SLIDER CONTAINER --- START */
+.backgraundGradient {
+  margin: 20px auto 0;
+  padding: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(250, 250, 250, 0) 0%, #f3f3f1 100%);
+}
+.sliderContainer {
+  width: 1600px;
+  background: linear-gradient(180deg, rgba(250, 250, 250, 0) 0%, #f3f3f1 100%);
+
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sliderText {
+  margin: 0 0 0 227px;
+  width: 482px;
+}
+.sliderText h2 {
+  font-size: 39px;
+  line-height: 120%;
+}
+.sliderText p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 150%;
+  opacity: 0.6;
+}
+.sliderButtonLeft,
+.sliderButtonRight {
+  padding: 12px 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #2e1720;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+.sliderButtonLeft {
+  margin: 42px 0 0 564px;
+}
+.sliderButtonRight {
+  margin: 42px 0 0 20px;
+}
+
+.sliderButtonLeft svg,
+.sliderButtonRight svg {
+  fill: #2e1720;
+}
+
+.sliderButtonRight svg {
+  transform: rotate(180deg);
+}
+.sliderButtonLeft:hover,
+.sliderButtonRight:hover {
+  border: 1px solid #f10c6d;
+}
+.sliderButtonLeft:hover svg,
+.sliderButtonRight:hover svg {
+  fill: #f10c6d;
+}
+.sliderButtonLeft:active,
+.sliderButtonRight:active {
+  border: 1px solid #f10c6d;
+  background-color: #f10c6d;
+}
+.sliderButtonLeft:active svg,
+.sliderButtonRight:active svg {
+  fill: #ffffff;
+}
+
+/* SLIDER --- START */
+
+.slderTextAndButtons {
+  display: flex;
+}
+.slider {
+  display: flex;
+  margin: 35px 0 0 0;
+  width: 1146px;
+}
+
+/* CARD1 --- START */
+.sliderCard1 {
+  margin: 0 0 0 227px;
+  padding: 20px 0 0 0;
+  width: 264px;
+  height: 368px;
+  border-radius: 10px;
+  border: 1px solid rgba(35, 67, 78, 0.15);
+  background-color: transparent;
+}
+.sliderCard1:hover {
+  background-color: #ffffff;
+  box-shadow: 4px 4px 10px 2px rgba(35, 67, 78, 0.1);
+}
+.topBlock {
+  display: flex;
+  margin: 0 0 0 16px;
+}
+.userText {
+  margin: 4px 0 0 8px;
+}
+.userText p:first-child {
+  font-size: 14px;
+  line-height: 120%;
+  color: #2e1720;
+}
+.userText p:last-child {
+  font-size: 10px;
+  line-height: 120%;
+  text-transform: capitalize;
+  opacity: 0.6;
+}
+.topBlock img:last-child {
+  margin: 13px 0 0 77px;
+}
+.sliderCard1 img:nth-child(2) {
+  margin: 14px 20px 0;
+}
+.firstLine {
+  margin: 14px 0 0 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+}
+.secondLine {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  opacity: 0.6;
+}
+.secondLine p:first-child {
+  margin: 15px 0 0 20px;
+  width: 108px;
+}
+.secondLine p:last-child {
+  margin: 15px 0 0 33px;
+}
+.thirdLine {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+}
+.thirdLine p:first-child {
+  margin: 7px 0 0 20px;
+  width: 108px;
+}
+.thirdLine p:last-child {
+  margin: 7px 0 0 33px;
+}
+/* CARD1 --- END */
+
+/* CARD2 --- START */
+.sliderCard2 {
+  margin: 0 0 0 30px;
+  padding: 20px 0 0 0;
+  width: 264px;
+  height: 368px;
+  border-radius: 10px;
+  border: 1px solid rgba(35, 67, 78, 0.15);
+  background-color: transparent;
+}
+.sliderCard2:hover {
+  background-color: #ffffff;
+  box-shadow: 4px 4px 10px 2px rgba(35, 67, 78, 0.1);
+}
+.sliderCard2 img:nth-child(2) {
+  margin: 14px 20px 0;
+}
+/* CARD2 --- END */
+
+/* CARD3 --- START */
+.sliderCard3 {
+  margin: 0 0 0 30px;
+  padding: 20px 0 0 0;
+  width: 264px;
+  height: 368px;
+  border-radius: 10px;
+  border: 1px solid rgba(35, 67, 78, 0.15);
+  background-color: transparent;
+}
+
+.sliderCard3:hover {
+  background-color: #ffffff;
+  box-shadow: 4px 4px 10px 2px rgba(35, 67, 78, 0.1);
+}
+
+.sliderCard3 img:nth-child(2) {
+  margin: 14px 20px 0;
+}
+/* CARD3 --- END */
+
+/* CARD4 --- START */
+.sliderCard4 {
+  margin: 0 0 0 30px;
+  padding: 20px 0 0 0;
+  width: 264px;
+  height: 368px;
+  border-radius: 10px;
+  border: 1px solid rgba(35, 67, 78, 0.15);
+  background-color: transparent;
+}
+.sliderCard4:hover {
+  background-color: #ffffff;
+  box-shadow: 4px 4px 10px 2px rgba(35, 67, 78, 0.1);
+}
+
+.sliderCard4 img:nth-child(2) {
+  margin: 14px 20px 0;
+}
+/* CARD4 --- END */
+
+/* SLIDER --- END */
+
+/* SLIDER CONTAINER --- END */
